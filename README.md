@@ -2,7 +2,7 @@
 
 This project implements the database modeling of a music streaming app data from a startup called 'Sparkfy'. Sparkfy is collecting user activity data from their new app, but it was first stored as JSON files containing log activity, user information, songs and artists.
 
-The purpose of this project is to create a simple logical modeling of the database using Postgres, implementing the ETL pipeline to process and ingest the data in the new database. To help Sparkify data analysts to get up to speed with this new database, some queries where previously designed and you can check them out in the section *Useful Queries*.
+The purpose of this project is to create a simple logical modeling of the database using Postgresql, implementing the ETL pipeline to process and ingest the data in the new database. To help Sparkify data analysts to get up to speed with this new database, some queries where previously designed and you can check them out in the section *Useful Queries*.
 
 ## Installation and dependencies
 
