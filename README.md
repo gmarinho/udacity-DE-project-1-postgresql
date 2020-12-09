@@ -1,4 +1,4 @@
-# Udacity Data Engineering Project 1 - Data Modeling with Postgress
+# Udacity Data Engineering Project 1 - Data Modeling with PostgreSQL
 
 This project implements the database modeling of a music streaming app data from a startup called 'Sparkfy'. Sparkfy is collecting user activity data from their new app, but it was first stored as JSON files containing log activity, user information, songs and artists.
 
@@ -20,6 +20,19 @@ Use the package manager *pip* to install the dependencies listed above.
 * **create_tables.py** - This file implements the setup of the database using queries implemented in the file sql_queries.py. It drops, if exists, the existing database and tables, (re)create them, and closes the connection to the database.
 * **etl.py** - The file implements the full logic to read all the input files from the data directory, and inserts the processed information into the database. It populates the tables 'songs', 'artists','users','time', and 'songplays'
 * **data/** - This folder structure contains the data provided by the 'Sparkfy' analysts to be ingested in the database.
+
+
+## Database Schema
+The modeled database contains 4 dimension tables and a unique fact table in star shape. The tables and the description of the stored data are described below:
+* Users: User information such as full name, gender, and subscription type (paid or free)
+* Songs: List of songs within the music streaming app, containing the song title, the artist id, the year of release and the song duration
+* Artists: Contains the artists information such as name, location, latitude and longitude
+* Time: Registers the timestamp for the users action to play a song, it contains the time stamp, and the other metadata related to the timestamp, such as day, hour, month, year, weekday, and week number of the year.
+* Songplays: Registers the actual user activity, such as start time, user id, song id, subscription type, artist id, session id, location and the agent used to stream the music.
+
+The diagram below shows the database representation with its tables and attributes:
+[Alt text](/udacity_postgress_project_1.png?raw=true "Title")
+
 
 ## How to run this project
 In order to run this project open a Python 3+ console, and use de commands listed below to complete the whole process:
