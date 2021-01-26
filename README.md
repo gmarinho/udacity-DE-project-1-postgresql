@@ -31,7 +31,7 @@ The modeled database contains 4 dimension tables and a unique fact table in star
 * Songplays: Registers the actual user activity, such as start time, user id, song id, subscription type, artist id, session id, location and the agent used to stream the music.
 
 The diagram below shows the database representation with its tables and attributes:
-[Alt text](/udacity_postgress_project_1.png?raw=true "Title")
+![Database Schema](udacity_postgress_project_1.png?raw=true "Title")
 
 
 ## How to run this project
